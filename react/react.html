@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+
+
+
+    ul{
+        width:60%;
+        background:lightskyblue;
+        margin: 0 auto;
+
+    }
+    li{
+           list-style: none;
+           text-align: center;
+            margin-bottom: 15px;
+       }
+    h3{
+        background-color: pink;
+        padding: 5px;
+        margin-bottom: 3px;
+    }
+    .pink{
+        background-color: pink;
+    }
+    .blue{
+        background: lightblue;
+    }
+
+    .tab{
+        width:1180px;
+        height:auto;
+        margin:0 auto;
+    }
+    .nav{
+        width:100%;
+        height:150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .nav li{
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+        width:20%;
+    }
+    .content{
+        width:100%;
+        height: 500px;
+        background-color: coral;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+    }
+
+    .active{
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        background: darkblue;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+
+
+</style>
+<body>
+<script src="react.js"></script>
+<script src="react-dom.js"></script>
+<!--<script type="text/babel" src="index.jsx"></script>-->
+<!--<script src="jquery.js"></script>-->
+<!--<script type="text/babel" src="props&&state.jsx"></script>-->
+<script type="text/babel" src="tab.jsx"></script>
+<!--<script src="props&&state.jsx"></script>-->
+<script src="browser.min.js"></script>
+<!--<script src="es6.js"></script>-->
+
+
+
+
+<!--云  PHP java python ruby  c# go erlang  node.js         -->
+
+<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;网络-->
+
+
+<!--端   html指挥浏览器绘图  css设置样式  js交互网络请求  PHP在云端存储信息操作信息   object-c  java c  c++    都是展示信息-->
+<!--pc端浏览器   移动端浏览器   pad浏览器  手机app  atm  手表   眼镜  vr眼镜  电脑屏幕-->
+
+
+<div id="container">
+
+</div>
+
+
+
+<!--es6  -->
+
+<!--声明局部变量-->
+<!--let-->
+<!--for(let index=0;index<10;index++){-->
+<!--}-->
+<!--if(true){-->
+<!--let c=12;-->
+<!--}-->
+
+<!--&lt;!&ndash;字符串&ndash;&gt;-->
+
+<!--let str=12；-->
+<!--let x=`abc${str}def`;-->
+<!--var x1=12;-->
+<!--var x2=13;-->
+
+<!--let className=(x1>x2)?`list${x1}`:`list${x2}`;-->
+<!--let className =`list${(x1 > x2)} ? x1:x2`;-->
+
+
+<!--&lt;!&ndash;函数&ndash;&gt;-->
+
+<!--var fn1 = ()=>{-->
+    <!--cosole.log(1);-->
+
+<!--}-->
+<!--var add=(x,y)=>{-->
+<!--retuen x+y;-->
+<!--}-->
+<!--var add=(x,y)=>x+y;-->
+<!--console.log(add(1,3));-->
+
+
+<!--var fn3=(x)=>({x:x});-->
+<!--console.log(fn3(15));-->
+
+<!--var fn4=(y)=>(fn3(y));-->
+ <!--console.log(fn4(12));-->
+
+
+
+
+<!--let database =[-->
+<!--{id:1,name:'a'},-->
+<!--{id:2,name:'b'},-->
+<!--{id:3,name:'c'},-->
+<!--{id:4,name:'d'},-->
+<!--{id:5,name:'e'},-->
+<!--{id:6,name:'f'},-->
+<!--];-->
+<!--let s='';-->
+<!--database.forEach(function (v,i){-->
+  <!--s+=v.name;-->
+
+<!--})-->
+<!--let s='';-->
+<!--for(var i=0;i<database.length;i++){-->
+
+  <!--s+=database[i].name;-->
+<!--}-->
+
+
+<!--&lt;!&ndash;map 根据原数组生成一个长度一致的数据&ndash;&gt;-->
+
+<!--var cc=database.map(function(v,i){-->
+ <!--return v.id;-->
+<!--}).join('');-->
+<!--cosole.log(cc);-->
+
+
+
+<!--cosole.log(database.map(v=>v.name).join(''));-->
+
+
+<!--const  声明常量-->
+<!--var arr = [-->
+<!--{index: 1, src: 'a'},-->
+<!--{index: 2, src: 'b'},-->
+<!--{index: 3, src: 'c'}-->
+<!--];-->
+<!--arr.sort((a, b)=>a.index < b.index);-->
+<!--console.log(arr);-->
+
+<!--// arr.push();-->
+<!--// arr.pop();-->
+<!--// arr.shift();-->
+<!--// arr.unshift();-->
+<!--// arr.slice();-->
+<!--// arr.splice();-->
+<!--// arr.join();-->
+<!--// arr.concat();-->
+<!--// arr.sort();-->
+<!--// arr.forEach();-->
+<!--// arr.map();-->
+<!--// arr.filter();-->
+
+<!--// function Cat(x, y) {-->
+<!--//   this.x = x;-->
+<!--//   this.y = y;-->
+<!--// }-->
+<!--// Cat.prototype.c = function () {-->
+<!--//   console.log(this.x);-->
+<!--// };-->
+<!--// var o = new Cat(1, 2);-->
+<!--// o.c();-->
+<!--class Cat {-->
+<!--constructor(x, y) {-->
+<!--this.x = x;-->
+<!--this.y = y;-->
+<!--}-->
+
+<!--c() {-->
+<!--console.log(this.x);-->
+<!--}-->
+<!--}-->
+<!--var o = new Cat(1, 2);-->
+<!--console.log(o.c());-->
+
+
+
+
+</body>
+</html>
